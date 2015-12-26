@@ -1,8 +1,9 @@
 class ZappTool < Formula
-  homepage ""
+  homepage "https://github.com/applicaster/Zapp-iOS-App-Configuration-Tool"
   url "https://github.com/applicaster/Zapp-iOS-App-Configuration-Tool/releases/download/0.1.1/ZappTool-0.1.1.zip"
   sha1 ""
 
   def install
+    bin.install "quiver2jekyll"
   end
 end
