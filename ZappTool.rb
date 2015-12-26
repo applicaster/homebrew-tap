@@ -4,6 +4,6 @@ class ZappTool < Formula
   sha1 ""
 
   def install
-    bin.install "quiver2jekyll"
+    bin.install "ZappTool"
   end
 end
