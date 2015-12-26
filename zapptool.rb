@@ -6,6 +6,6 @@ class ZappTool < Formula
   bottle :unneeded
 
   def install
-    bin.install "ZappTool"
+    bin.install "zapptool"
   end
 end
