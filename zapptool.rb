@@ -5,7 +5,7 @@ class Zapptool < Formula
   head "353c755e2ea81bd8e1fd4ff074672f0db0c33327"
   version "0.1.4"
   
-  depends_on :xcode => "7.2"
+  depends_on :xcode => "7.1"
 
   def install
     system "./scripts/build.sh", "SYMROOT=build"
