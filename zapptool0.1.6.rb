@@ -11,13 +11,14 @@ class Zapptool016 < Formula
 
   def install
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
-    prefix.install Dir["#{buildpath}/build/zapptool"]
-    inner_binary = "#{prefix}/zapptool"
+    File.rename("#{buildpath}/build/zapptool", "#{buildpath}/build/zapptool0.1.6")
+    prefix.install Dir["#{buildpath}/build/zapptool0.1.6"]
+    inner_binary = "#{prefix}/zapptool0.1.6"
     bin.write_exec_script inner_binary
-    chmod 0755, bin/"zapptool"
+    chmod 0755, bin/"zapptool0.1.6"
   end
 
   test do
-    system "(#{bin}/zapptool -version; true)"
+    system "(#{bin}/zapptool0.1.6 -version; true)"
   end
 end
