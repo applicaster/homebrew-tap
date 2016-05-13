@@ -6,6 +6,7 @@ class Zappifest < Formula
   sha256 "fb787512c8c4443229c1635d84cab7cce49ea4c17e52470dc7fc5a20ca140c48"
 
   def install
+    prefix.install Dir["output/*"]
     bin.install "zappifest"
   end
 end
