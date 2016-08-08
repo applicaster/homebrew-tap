@@ -1,9 +1,9 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.6.1.tar.gz"
-  version "0.6.1"
-  sha256 "648f6635d24d7eee253d694836aac51e8ea983d41e674f3d0c642caabf51de68"
+  url "https://github.com/applicaster/zappifest/archive/0.7.0.tar.gz"
+  version "0.7.0"
+  sha256 "58cce903219777b5b62bc581298cc7998ce93d2d60925a5bbe9d011c1f4c84a4"
 
   def install
     lib.install "lib/multipart.rb", "lib/network_helpers.rb"
