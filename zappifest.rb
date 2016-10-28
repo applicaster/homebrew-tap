@@ -34,6 +34,6 @@ class Zappifest < Formula
     exec ruby zappifest.rb "$@"
     EOS
 
-    lib.install "lib/multipart.rb", "lib/network_helpers.rb" "lib/zappifest.rb"
+    lib.install "lib/multipart.rb", "lib/network_helpers.rb", "lib/zappifest.rb"
   end
 end
