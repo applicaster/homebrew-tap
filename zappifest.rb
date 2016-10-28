@@ -28,8 +28,8 @@ class Zappifest < Formula
     end
 
     mkpath bin
-    system("echo 'export GEM_HOME=\"#{libexec}/vendor\"' >> ~/.bashrc")
-    system("echo 'export GEM_HOME=\"#{libexec}/vendor\"' >> ~/.zshrc")
+    `echo 'export GEM_HOME="#{libexec}/vendor"' >> ~/.bashrc`
+    `echo 'export GEM_HOME="#{libexec}/vendor"' >> ~/.zshrc`
     (bin/"__YOUR_FORMULA_SCRIPT__").write <<-EOS.undent
     #!/bin/bash
     export GEM_HOME="#{libexec}/vendor"
