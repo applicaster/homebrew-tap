@@ -21,6 +21,11 @@ class Zappifest < Formula
   end
 
   def install
+    installation_param = `gem env`
+    path = installation_param.split(" ").last
+
+    system "gem install terminal-table diffy commander --install-dir #{path}"
+
     resources.each do |r|
       r.verify_download_integrity(r.fetch)
       system("gem", "install", r.cached_download, "--no-document",
@@ -28,8 +33,6 @@ class Zappifest < Formula
     end
 
     mkpath bin
-    `echo 'export GEM_HOME="#{libexec}/vendor"' >> ~/.bashrc`
-    `echo 'export GEM_HOME="#{libexec}/vendor"' >> ~/.zshrc`
     (bin/"__YOUR_FORMULA_SCRIPT__").write <<-EOS.undent
     #!/bin/bash
     export GEM_HOME="#{libexec}/vendor"
