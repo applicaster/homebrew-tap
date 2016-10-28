@@ -30,8 +30,8 @@ class Zappifest < Formula
     mkpath bin
     (bin/"__YOUR_FORMULA_SCRIPT__").write <<-EOS.undent
     #!/bin/bash
-    echo export GEM_HOME="#{libexec}/vendor" >> ~/.bashrc
-    echo export GEM_HOME="#{libexec}/vendor" >> ~/.zshrc
+    echo 'export GEM_HOME="#{libexec}/vendor"' >> ~/.bashrc
+    echo 'export GEM_HOME="#{libexec}/vendor"' >> ~/.zshrc
     export GEM_HOME="#{libexec}/vendor"
     exec ruby __TARGET__ "$@"
     EOS
