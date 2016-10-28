@@ -31,7 +31,7 @@ class Zappifest < Formula
     (bin/"zappifest").write <<-EOS.undent
     #!/bin/bash
     export GEM_HOME="#{libexec}/vendor"
-    exec ruby zappifest.rb "$@"
+    ruby ../lib/zappifest.rb "$@"
     EOS
 
     lib.install "lib/multipart.rb", "lib/network_helpers.rb", "lib/zappifest.rb"
