@@ -28,7 +28,7 @@ class Zappifest < Formula
     end
 
     mkpath bin
-    (bin/"__zappifest__").write <<-EOS.undent
+    (bin/"__YOUR_FORMULA_SCRIPT__").write <<-EOS.undent
     #!/bin/bash
     export GEM_HOME="#{libexec}/vendor"
     exec ruby __TARGET__ "$@"
