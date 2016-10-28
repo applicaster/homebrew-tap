@@ -21,7 +21,9 @@ class Zappifest < Formula
   end
 
   def install
-    installation_param = `gem env`
+    puts `gem env`
+    installation_param = `gem env | grep 'INSTALLATION DIRECTORY'`
+    puts installation_param
     path = installation_param.split(" ").last
 
     system "gem install terminal-table diffy commander --install-dir #{path}"
@@ -35,6 +37,8 @@ class Zappifest < Formula
     mkpath bin
     (bin/"__YOUR_FORMULA_SCRIPT__").write <<-EOS.undent
     #!/bin/bash
+    echo "export GEM_HOME='#{libexec}/vendor'"
+    echo "export GEM_HOME='#{libexec}/vendor'" >> ~/.zshrc
     export GEM_HOME="#{libexec}/vendor"
     exec ruby __TARGET__ "$@"
     EOS
