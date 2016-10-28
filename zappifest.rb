@@ -1,9 +1,9 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.13.0.tar.gz"
-  version "0.13.0"
-  sha256 "df5b8ec3259ad8b9345c21bfd5d3fc35aed992e6ea823705e549c0b4451c60df"
+  url "https://github.com/applicaster/zappifest/archive/0.13.1.tar.gz"
+  version "0.13.1"
+  sha256 "2a7388f2cb540b9121ecdaa90e8917c4d0321b1f3c65650af12ffd770424082b"
 
   resource "commander" do
     url "https://rubygems.org/gems/commander-4.4.0.gem"
@@ -21,13 +21,6 @@ class Zappifest < Formula
   end
 
   def install
-    puts `gem env`
-    installation_param = `gem env | grep 'INSTALLATION DIRECTORY'`
-    puts installation_param
-    path = installation_param.split(" ").last
-
-    system "gem install terminal-table diffy commander --install-dir #{path}"
-
     resources.each do |r|
       r.verify_download_integrity(r.fetch)
       system("gem", "install", r.cached_download, "--no-document",
@@ -35,17 +28,12 @@ class Zappifest < Formula
     end
 
     mkpath bin
-    (bin/"__YOUR_FORMULA_SCRIPT__").write <<-EOS.undent
+    (bin/"zappifest").write <<-EOS.undent
     #!/bin/bash
-    echo "export GEM_HOME='#{libexec}/vendor'"
-    echo "export GEM_HOME='#{libexec}/vendor'" >> ~/.zshrc
     export GEM_HOME="#{libexec}/vendor"
-    exec ruby __TARGET__ "$@"
+    exec ruby zappifest.rb "$@"
     EOS
 
-    lib.install "lib/multipart.rb", "lib/network_helpers.rb"
-    bin.install "bin/zappifest"
-
-    puts "Please restart your terminal before using Zappifest"
+    lib.install "lib/multipart.rb", "lib/network_helpers.rb" "lib/zappifest.rb"
   end
 end
