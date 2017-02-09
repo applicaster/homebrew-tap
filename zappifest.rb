@@ -10,6 +10,11 @@ class Zappifest < Formula
     sha256 "358ae12110faed47683633bdf0e71d6782a0f3eccdbaea4e76b375d260490a56"
   end
 
+  resource "mime-types" do
+    url "https://rubygems.org/gems/mime-types-3.1.gem"
+    sha256 "75949321c3f55e6618d0596016059841c26168342ec1ee4e641053bb66fa0701"
+  end
+
   resource "diffy" do
     url "https://rubygems.org/gems/diffy-3.1.0.gem"
     sha256 "72161a619117127af958d3fca3d04a1f6dd6c5bb416209ff923aa4ed7e5cf1ab"
