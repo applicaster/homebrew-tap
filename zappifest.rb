@@ -1,9 +1,9 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.19.0.tar.gz"
-  version "0.19.0"
-  sha256 "2f4981320031a7058d1c7c4df042935cb2077af6f24ad2a0648a59ce7bee2833"
+  url "https://github.com/applicaster/zappifest/archive/0.20.0.tar.gz"
+  version "0.20.0"
+  sha256 "62c6e3973ff706550c55fc7d5a73e8b6a9ec5b85c5f25a65974235482910420e"
 
   resource "commander" do
     url "https://rubygems.org/gems/commander-4.4.0.gem"
@@ -44,6 +44,6 @@ class Zappifest < Formula
     ruby #{lib}/zappifest.rb "$@"
     EOS
 
-    lib.install "lib/multipart.rb", "lib/network_helpers.rb", "lib/zappifest.rb"
+    lib.install "lib/multipart.rb", "lib/network_helpers.rb", "lib/manifest_helpers.rb", "lib/zappifest.rb"
   end
 end
