@@ -7,7 +7,7 @@ class Zapptool < Formula
 
   version "0.2.17"
 
-  depends_on :xcode => "~> 8.1"
+  depends_on :xcode => "8.1"
 
   def install
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
