@@ -49,6 +49,7 @@ class Zappifest < Formula
       "lib/network_helpers.rb",
       "lib/manifest_helpers.rb",
       "lib/question.rb",
+      "lib/version.rb",
       "lib/zappifest.rb",
     )
   end
