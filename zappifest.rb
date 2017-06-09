@@ -1,9 +1,9 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.26.1.tar.gz"
-  version "0.26.1"
-  sha256 "df95f22ca434cd6e81f4e285ed13213fa818fa384aa2f922186b6a02794e807b"
+  url "https://github.com/applicaster/zappifest/archive/0.27.0.tar.gz"
+  version "0.27.0"
+  sha256 "0bc781e458af2dc59d562dcbd699cca30a5b0b632f112c58ad68deb177bb86f8"
 
   resource "commander" do
     url "https://rubygems.org/gems/commander-4.4.0.gem"
@@ -45,11 +45,16 @@ class Zappifest < Formula
     EOS
 
     lib.install(
+      "lib/api_questions_helper.rb",
+      "lib/custom_fields_questions_helper.rb",
+      "lib/data_source_provider_questions_helper.rb",
+      "lib/default_questions_helper.rb",
+      "lib/react_native_questions_helper.rb",
+      "lib/version.rb",
       "lib/multipart.rb",
       "lib/network_helpers.rb",
       "lib/manifest_helpers.rb",
       "lib/question.rb",
-      "lib/version.rb",
       "lib/zappifest.rb",
     )
   end
