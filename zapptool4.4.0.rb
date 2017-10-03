@@ -1,4 +1,4 @@
-class Zapptool4.4.0 < Formula
+class Zapptool440 < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
   url "git@github.com:applicaster/ZappTool.git", :using => :git,
