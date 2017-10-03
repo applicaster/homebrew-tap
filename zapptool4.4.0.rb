@@ -8,8 +8,7 @@ class Zapptool440 < Formula
   version "1.1.4"
    
   def install
-    system "#{bin}/brew update"
-    #system "OUTPUT_DIR=#{buildpath} ./scripts/dependencies.sh"
+    system "OUTPUT_DIR=#{buildpath} ./scripts/dependencies.sh"
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
     File.rename("#{buildpath}/build/zapptool", "#{buildpath}/build/zapptool4.4.0")
     prefix.install Dir["#{buildpath}/build/zapptool4.4.0"]
