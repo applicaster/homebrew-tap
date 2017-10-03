@@ -7,7 +7,6 @@ class Zapptool440 < Formula
 
   version "1.1.0"
 
-
   def install
     system "sudo brew install ImageMagick"
     File.rename("#{buildpath}/build/zapptool", "#{buildpath}/build/zapptool4.4.0")
