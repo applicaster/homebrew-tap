@@ -7,7 +7,6 @@ class Zapptool440 < Formula
 
   version "1.1.0"
 
-  depends_on :xcode => "8.1"
 
   def install
     system "sudo brew install ImageMagick"
