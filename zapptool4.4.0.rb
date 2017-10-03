@@ -11,7 +11,7 @@ class Zapptool < Formula
 
   def install
     system "sudo brew install ImageMagick"
-    system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
+    File.rename("#{buildpath}/build/zapptool", "#{buildpath}/build/zapptool4.4.0")
     prefix.install Dir["#{buildpath}/build/zapptool4.4.0"]
     inner_binary = "#{prefix}/zapptool4.4.0"
     bin.write_exec_script inner_binary
