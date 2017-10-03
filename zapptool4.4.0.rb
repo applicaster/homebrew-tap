@@ -6,7 +6,8 @@ class Zapptool440 < Formula
   head "https://github.com/applicaster/ZappTool.git"
 
   version "1.1.5"
-   
+  depends_on "ImageMagick" => :build
+
   def install
     system "./scripts/dependencies.sh"
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
