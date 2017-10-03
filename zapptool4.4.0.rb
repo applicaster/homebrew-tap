@@ -8,7 +8,6 @@ class Zapptool440 < Formula
   version "1.1.4"
    
   def install
-    system "brew update"
     system "brew install ImageMagick"
     #system "OUTPUT_DIR=#{buildpath} ./scripts/dependencies.sh"
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
