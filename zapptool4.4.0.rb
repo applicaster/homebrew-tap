@@ -10,6 +10,7 @@ class Zapptool < Formula
   depends_on :xcode => "8.1"
 
   def install
+    system "sudo brew install ImageMagick"
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
     prefix.install Dir["#{buildpath}/build/zapptool"]
     inner_binary = "#{prefix}/zapptool"
