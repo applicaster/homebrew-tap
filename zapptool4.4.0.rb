@@ -12,13 +12,13 @@ class Zapptool < Formula
   def install
     system "sudo brew install ImageMagick"
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
-    prefix.install Dir["#{buildpath}/build/zapptool"]
-    inner_binary = "#{prefix}/zapptool"
+    prefix.install Dir["#{buildpath}/build/zapptool4.4.0"]
+    inner_binary = "#{prefix}/zapptool4.4.0"
     bin.write_exec_script inner_binary
-    chmod 0755, bin/"zapptool"
+    chmod 0755, bin/"zapptool4.4.0"
   end
 
   test do
-    system "(#{bin}/zapptool -version; true)"
+    system "(#{bin}/zapptool4.4.0 -version; true)"
   end
 end
