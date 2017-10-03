@@ -2,10 +2,10 @@ class Zapptool440 < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
   url "git@github.com:applicaster/ZappTool.git", :using => :git,
-                                                 :tag => "v1.1.1"
+                                                 :tag => "v1.1.2"
   head "https://github.com/applicaster/ZappTool.git"
 
-  version "1.1.1"
+  version "1.1.2"
    
   def install
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
