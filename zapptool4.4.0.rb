@@ -9,7 +9,6 @@ class Zapptool440 < Formula
   depends_on "ImageMagick" => :build
 
   def install
-    system "./scripts/dependencies.sh"
     system "OUTPUT_DIR=#{buildpath} ./scripts/build.sh"
     File.rename("#{buildpath}/build/zapptool", "#{buildpath}/build/zapptool4.4.0")
     prefix.install Dir["#{buildpath}/build/zapptool4.4.0"]
