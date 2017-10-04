@@ -16,8 +16,5 @@ class Zapptool440 < Formula
     bin.write_exec_script inner_binary
     chmod 0755, bin/"zapptool4.4.0"
   end
-
-  test do
-    system "(#{bin}/zapptool4.4.0 -version; true)"
-  end
+  
 end
