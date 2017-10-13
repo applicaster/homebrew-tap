@@ -3,7 +3,7 @@ class Zappifest < Formula
   homepage "https://github.com/applicaster/zappifest"
   url "https://github.com/applicaster/zappifest/archive/0.34.0.tar.gz"
   version "0.34.0"
-  sha256 "340c7e6d1edf28e0c35436b38036bc2430dff9ba487a25c625d94903da45d2ac"
+  sha256 "8a181b7b97aca6afd15fd6ec865d0a9952e2cde4e4f7bcd0877afce2f75e6fe1"
 
   resource "commander" do
     url "https://rubygems.org/gems/commander-4.4.0.gem"
