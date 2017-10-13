@@ -1,9 +1,9 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.33.0.tar.gz"
-  version "0.33.0"
-  sha256 "da10f697eddb42ff022ac262e1b59553accea3e183a031ec1804c1ed7337ea10"
+  url "https://github.com/applicaster/zappifest/archive/0.34.0.tar.gz"
+  version "0.34.0"
+  sha256 "340c7e6d1edf28e0c35436b38036bc2430dff9ba487a25c625d94903da45d2ac"
 
   resource "commander" do
     url "https://rubygems.org/gems/commander-4.4.0.gem"
@@ -50,6 +50,7 @@ class Zappifest < Formula
       "lib/data_source_provider_questions_helper.rb",
       "lib/default_questions_helper.rb",
       "lib/react_native_questions_helper.rb",
+      "lib/react_native_npm_questions_helper.rb",
       "lib/version.rb",
       "lib/multipart.rb",
       "lib/network_helpers.rb",
