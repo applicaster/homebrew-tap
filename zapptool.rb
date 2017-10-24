@@ -2,10 +2,10 @@ class Zapptool < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
   url "git@github.com:applicaster/ZappTool.git", :using => :git,
-                                                 :tag => "v1.2.1"
+                                                 :tag => "v1.2.2"
   head "https://github.com/applicaster/ZappTool.git"
 
-  version "1.2.1"
+  version "1.2.2"
   depends_on "ImageMagick" => :build
   depends_on :xcode => "9.0"
 
