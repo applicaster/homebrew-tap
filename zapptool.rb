@@ -5,7 +5,7 @@ class Zapptool < Formula
                                                  :tag => "v1.2.4"
   head "https://github.com/applicaster/ZappTool.git"
 
-  version "1.2.4"
+  version "1.2.5"
   depends_on "ImageMagick" => :build
   depends_on :xcode => "9.0"
 
