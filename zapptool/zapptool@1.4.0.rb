@@ -1,4 +1,4 @@
-class Zapptool < Formula
+class ZapptoolAT140 < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
   url "https://dl.bintray.com/applicaster-ltd/pods/ZappTool_v1.4.0_dc866771b8b75a44bd50a2a57939bee197dea17e.zip"
