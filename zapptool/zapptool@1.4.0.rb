@@ -6,7 +6,7 @@ class ZapptoolAT140 < Formula
   version "1.4.0"
 
   def install
-    exec_filename = "#{name}".downcase
+    exec_filename = "zapptool"
     prefix_filename = "#{prefix}/#{exec_filename}"
     prefix.install Dir["#{exec_filename}"]
     bin.write_exec_script "#{prefix_filename}"
