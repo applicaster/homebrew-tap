@@ -38,7 +38,7 @@ class Zappifest < Formula
     end
 
     mkpath bin
-    (bin/"zappifest").write <<-EOS.undent
+    (bin/"zappifest").write <<~EOS
     #!/bin/bash
     export GEM_HOME="#{libexec}/vendor"
     ruby #{lib}/zappifest.rb "$@"
