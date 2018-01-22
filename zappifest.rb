@@ -30,6 +30,11 @@ class Zappifest < Formula
     sha256 "1cb639228bf9f2e98543f866e94e64872631d7b6c8b2a5565289175405e1e0af"
   end
 
+  resource "versionomy" do
+    url "https://rubygems.org/gems/versionomy-0.5.0.gem"
+    sha256 "636c8f9174c884034d1b24354a479c579b32e7839d897729b97e079aff251444"
+  end
+
   def install
     resources.each do |r|
       r.verify_download_integrity(r.fetch)
