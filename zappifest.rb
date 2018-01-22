@@ -57,6 +57,7 @@ class Zappifest < Formula
       "lib/react_native_questions_helper.rb",
       "lib/react_native_npm_questions_helper.rb",
       "lib/version.rb",
+      "lib/version_helper.rb"
       "lib/plugin_version.rb",
       "lib/plugin.rb",
       "lib/plugin_base.rb",
