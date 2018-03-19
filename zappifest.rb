@@ -1,7 +1,7 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.39.0.tar.gz"
+  url "https://github.com/applicaster/zappifest/archive/0.40.0.tar.gz"
   version "0.39.0"
   sha256 "1f7ebc1e0000f8e5d23bc03fe747e9959078e2fe1591a651dd91a05fca0d57b1"
 
@@ -53,6 +53,7 @@ class Zappifest < Formula
       "lib/api_questions_helper.rb",
       "lib/custom_fields_questions_helper.rb",
       "lib/data_source_provider_questions_helper.rb",
+      "lib/navigation_plugins_questions_helper.rb",
       "lib/default_questions_helper.rb",
       "lib/react_native_questions_helper.rb",
       "lib/react_native_npm_questions_helper.rb",
