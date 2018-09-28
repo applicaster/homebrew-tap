@@ -1,9 +1,9 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.50.0.tar.gz"
-  version "0.50.0"
-  sha256 "442f671102a766f9b7f122bb02a630089aaa027b1863608aa1a3ceb0faabaa83"
+  url "https://github.com/applicaster/zappifest/archive/0.51.0.tar.gz"
+  version "0.51.0"
+  sha256 "5708be452611200a78b6acbc1f732cd2446f5988d5a56c1ac1fc1675c73bcb69"
 
   resource "commander" do
     url "https://rubygems.org/gems/commander-4.4.0.gem"
