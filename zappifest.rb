@@ -1,7 +1,7 @@
 class Zappifest < Formula
   desc "Tool to generate Zapp plugin manifest"
   homepage "https://github.com/applicaster/zappifest"
-  url "https://github.com/applicaster/zappifest/archive/0.61.0.tar.gz"
+  url "https://github.com/applicaster/zappifest/archive/0.62.0.tar.gz"
   version "0.62.0"
   sha256 "be84c347c5d578f699ceb1098a31f8fdd6700a298842946a86a99788123f9516"
 
