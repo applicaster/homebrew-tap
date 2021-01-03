@@ -1,7 +1,7 @@
 class ZapptoolAT39 < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
-  url "https://dl.bintray.com/applicaster-ltd/pods/ZappTool_v3.9.8.zip"
+  url "https://assets-production.applicaster.com/zapp/helpers/zapptool/3.9.8/ZappTool_v3.9.8.zip"
   sha256 "ec54902486ad9e4ab89b4cfd8b7621da687efd5951d0abbfc98ae10f891017c1"
   version "3.9.8"
 
