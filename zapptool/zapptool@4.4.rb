@@ -1,9 +1,9 @@
 class ZapptoolAT44 < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
-  url "https://assets-production.applicaster.com/zapp/helpers/zapptool/4.4.8/zapptool.zip"
-  sha256 "cf5a5cf899464c601cf0960a6eb7dae7d5c4f63f9c965be9c3d70d3f22f7addb"
-  version "4.4.8"
+  url "https://assets-production.applicaster.com/zapp/helpers/zapptool/4.4.9/zapptool.zip"
+  sha256 "d5816a68ed55278d56af9393d6e6584f8bea864dd871fb06c37cc34d43e4c4d3"
+  version "4.4.9"
 
   def install
     exec_filename = "zapptool"
