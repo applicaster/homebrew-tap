@@ -1,4 +1,4 @@
-class Zapptool < Formula
+class ZapptoolAT51 < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
   url "https://assets-production.applicaster.com/zapp/helpers/zapptool/5.1.0/zapptool.zip"
@@ -6,7 +6,7 @@ class Zapptool < Formula
   version "5.1.0"
 
   def install
-    exec_filename = "#{name}".downcase
+    exec_filename = "zapptool"
     prefix_filename = "#{prefix}/#{exec_filename}"
     prefix.install Dir["#{exec_filename}"]
     bin.write_exec_script "#{prefix_filename}"
