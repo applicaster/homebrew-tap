@@ -2,7 +2,7 @@ class Zapptool < Formula
   desc "Fast configuration tool for modular app"
   homepage "https://github.com/applicaster/ZappTool"
   url "https://assets-production.applicaster.com/zapp/helpers/zapptool/5.2.1/zapptool.zip"
-  sha256 "798bf15a1b2074f6d5882e44d430da80fc2b1529e0c3e90172a7fc74e3ea0720"
+  sha256 "0c62289d990c72910e25411352e8f34afe329307639e5880135d3c204c2ad900"
   version "5.2.1"
 
   def install
